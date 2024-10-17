@@ -1,0 +1,13 @@
+# Función para calcular la compuerta NOT
+def not_gate(input1):
+    return not input1
+
+# Lista de posibles valores para la entrada
+inputs = [0, 1]
+
+# Imprimir la tabla de verdad
+print("A | NOT A")
+print("---------")
+for a in inputs:
+    result = not_gate(a)
+    print("{} |   {}".format(a, int(result)))

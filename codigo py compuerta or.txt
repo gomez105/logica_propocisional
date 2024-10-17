@@ -1,0 +1,13 @@
+# Función para calcular la compuerta OR
+def or_gate(input1, input2):
+    return input1 or input2
+
+# Lista de posibles valores para las entradas
+inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
+
+# Imprimir la tabla de verdad
+print("A | B | A OR B")
+print("----------------")
+for a, b in inputs:
+    result = or_gate(a, b)
+    print("{} | {} |    {}".format(a, b, result))
